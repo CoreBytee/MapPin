@@ -1,4 +1,21 @@
+@keyframes backgroundanimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+html {
+  height: 100vh;
+}
 html,
 body {
   margin: 0;
+  background: linear-gradient(270deg, #ff8a00, #e52e71);
+  background-size: 400% 400%;
+  animation: backgroundanimation 15s ease infinite;
 }
