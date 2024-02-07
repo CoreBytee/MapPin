@@ -12,5 +12,5 @@ window.speakSound = async function(Text, Pitch) {
     }
     const AudioFile = new Audio()
     AudioFile.src = Synth.Animalese(Text, true, Pitch).dataURI
-    AudioFile.play()
+    return AudioFile.play()
 }
