@@ -4,22 +4,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Map Pin | Love finder</title>
+        <title>Map Pin | Love land finder</title>
 
         <!-- Styling -->
         <link rel="stylesheet" href="/assets/styling/index.css">
 
         <!-- animalise.js -->
         <script src="/assets/scripts/animalese/riffwave.js"></script>
-        <!-- <script src="/assets/scripts/animalese/Blob.js"></script> -->
-        <!-- <script src="/assets/scripts/animalese/FileSaver.min.js"></script> -->
         <script src="/assets/scripts/animalese/animalese.js"></script>
         <script src="/assets/scripts/animalese/index.js"></script>
         
         <!-- Scripts -->
         <script src="/assets/scripts/globals.js" type="module" defer></script>
         <script src="/assets/scripts/mascot.js" defer></script>
-        <script src="/assets/scripts/index.js" defer></script>
+        <script src="/assets/scripts/index.js" type="module" defer></script>
 
         <!-- Meta -->
         <link rel="shortcut icon" href="/assets/images/mascot/love.png" type="image/png">
@@ -27,7 +25,6 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
         <link href="https://fonts.googleapis.com/css2?family=Honk&family=Pacifico&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
@@ -38,10 +35,16 @@
             <h3>Find your love</h3>
         </header>
         <div class="mascot idle">
-            <img class="" src="/assets/images/mascot/love.png" alt="">
+            <img class="imageIcon" src="/assets/images/mascot/love.png" alt="">
             <div>
                 <a class="speechballoon"></a>
             </div>
+        </div>
+        <div class="questions" style="display: none">
+            <div class="question">
+
+            </div>
+            <button>Let's go.</button>
         </div>
     </body>
 
