@@ -5,7 +5,7 @@ class Mascot {
     }
 
     async SpeechError() {
-        this.SpeechBubble.innerHTML = "<a href='/' class='error'>Click here to start.</a>"
+        this.SpeechBubble.innerHTML = "<a href='./' class='error'>Click here to start.</a>"
         document.querySelector(".questions").innerHTML = ""
     }
 
