@@ -9,19 +9,31 @@ class Mascot {
         document.querySelector(".questions").innerHTML = ""
     }
 
+    async SpeakAnimation(State) {
+        this.Speaking = State
+        if (State) {
+            this.Element.classList.add('speaking')
+        } else {
+            this.Element.classList.remove('speaking')
+        }
+    }
+
     async Speak(Text) {
+        this.SpeakAnimation(true)
         this.SpeechBubble.innerText = ''
         let LastChar = ''
         try {
             await speakSound(Text, 2)
         } catch (error) {
+            console.log(error)
             return this.SpeechError()
         }
         for (const Char of Text) {
             this.SpeechBubble.innerText += `${LastChar == " " ? " " : ""}${Char}`
             LastChar = Char
-            await new Promise(resolve => setTimeout(resolve, 30))
+            await sleep(30)
         }
+        this.SpeakAnimation(false)
     }
 }
 
