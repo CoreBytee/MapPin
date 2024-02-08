@@ -1,7 +1,7 @@
 let Loaded = false
 
 const Synth = new Animalese(
-    "/assets/sounds/animalese.wav",
+    "./assets/sounds/animalese.wav",
     () => { Loaded = true }
 )
 
